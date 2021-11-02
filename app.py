@@ -21,7 +21,7 @@ class Guide(db.Model):
     name = db.Column(db.String, unique=False)
     thoughs = db.Column(db.String, unique=False)
 
-    def __init__(self, thoughs, name):
+    def __init__(self, name, thoughs):
         self.name = name
         self.thoughs = thoughs
         
